@@ -1,0 +1,31 @@
+Yêu cầu:
+Viết chương trình nhập vào một số nguyên n và in ra màn hình số chữ số của nó.
+Input:
+
+Một số nguyên n
+ duy nhất nhập vào từ bàn phím (−1018≤n≤1018)
+.
+Output:
+
+Một số nguyên duy nhất là số chữ số của n
+.
+Gợi ý:
+
+Dùng vòng lặp do {...} while (...); để giải quyết bài tập này.
+Khởi tạo một biến đếm count.
+Xoá bớt một chữ số trong n bằng cách chia lấy phần nguyên với 10.
+Cộng thêm count 1 đơn vị.
+Nếu n chưa bằng 0, quay lại bước 3.
+Lưu ý:
+
+Sinh viên không dùng xâu ký tự để làm bài tập này.
+Kiểu dữ liệu long long (tương đương long long int) sẽ lưu được giá trị nguyên từ ≈−1019
+ đến ≈1019
+.
+Tại bước 5, cần lưu ý điều kiện là n chưa bằng 0 (n != 0). Rất nhiều bạn sẽ sử dụng điều kiện n > 0, như vậy sẽ sai với các số âm. 
+Sinh viên xem lại bài đã làm và trả lời câu hỏi: Tại sai dùng vòng lặp do {...} while (...); mà không dùng while (...) {...}?
+For example:
+
+Input	Result
+-1593
+4
