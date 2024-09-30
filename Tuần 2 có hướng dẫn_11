@@ -1,0 +1,36 @@
+Yêu cầu:
+Phương sai của dãy X
+ gồm n
+ phần tử được tính theo công thức:
+
+var(X)=1n∑i=1n(xi−μ)2
+
+với μ
+ là giá trị trung bình (mean) của X
+
+Với công thức trên, hãy viết chương trình tính phương sai của một dãy số thực gồm n
+ số.
+
+Input:
+Dòng đầu tiên là độ dài n
+, 0<n≤1000
+.
+Dòng thứ 2 chứa n
+ số thực cách nhau bởi dấu cách
+Output:
+Phương sai của dãy X
+Kết quả làm tròn đến chữ số thập phân thứ hai.
+Gợi ý:
+Khai báo biến const int MAX_N = 1000;
+Khai báo biến int n; và nhập dữ liệu cin >> n;
+Khởi tạo mảng double arrayX[MAX_N];
+Khai báo biến tổng double sum = 0;
+Tạo vòng lặp để nhập vào từng phần tử của mảng, đồng thời cập nhật tổng tại mỗi lần lặp sum += arrayX[i];
+Tính giá trị trung bình double mean = sum / n;
+Tạo vòng lặp để tính phương sai theo công thức đã cho.
+For example:
+
+Input	Result
+8
+5 10 15 2 4 6 8 10
+15.00
