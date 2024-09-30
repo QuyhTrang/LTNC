@@ -1,0 +1,39 @@
+Yêu cầu:
+"Vừa gà vừa chó,
+
+Bó lại cho tròn,
+
+Ba mươi sáu con,
+
+Một trăm chân chẵn"
+
+Từ bài toán dân gian trên, mở rộng thành chương trình nhận đầu vào là tổng số con và tổng số chân của gà và chó. Nếu tìm được số phù hợp, in ra số lượng gà và số lượng chó. Ngược lại, in ra "invalid"
+
+Input: 
+
+Gồm 2 số nguyên dương: tổng số con và tổng số chân
+Ouput:
+
+Nếu tìm ra được phương án phù hợp, in ra số lượng gà và số lượng chó theo mẫu sau: "chicken = <số gà>, dog = <số chó>". 
+Nếu không tìm được phương án phù hợp, in ra "invalid"
+Gợi ý:
+
+Khai báo biến int total, totalLegs; và nhập dữ liệu cin >> total >> totalLegs;
+Khai báo biến bool flag = false để xác định bài toán có lời giải hay không, có giá trị ban đầu là false có nghĩa là chưa tìm ra được lời giải.
+Sử dụng vòng lặp for kiểm tra hết các trường hợp. Khai báo biến chạy int numChicken là biến chạy của vòng for (bạn cũng có thể để biến chạy là numDog, cần chú ý điều kiện)
+Trong vòng for dùng câu lệnh rẽ nhánh if để kiểm tra điều kiện numChicken*2+(total-numChicken)*4 == totalLegs . Nếu đúng in ra như mẫu output, chuyển biến flag = true do chúng ta đã tìm được phương án thích hợp.
+Nếu sau khi vòng for kết thúc, kiểm tra giá trị flag, nếu flag == false có nghĩa là không tìm ra phương án phù hợp, in ra "invalid".
+Lưu ý:
+Trong vong for khi tìm được phương án phù hợp, in ra và đổi giá trị flag; chúng ta có thể dùng câu lệnh break; để kết thúc vòng for sớm
+
+
+
+
+
+
+
+For example:
+
+Input	Result
+36 100
+chicken = 22, dog = 14
