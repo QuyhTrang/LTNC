@@ -1,0 +1,43 @@
+Yêu cầu
+Hãy viết chương trình nhận vào từ bàn phím một số nguyên n
+ và in ra một viên kim cương có kích thước (2n+1) x (2n+1).
+
+Input
+Một dòng văn bản chứa số n>0
+Output
+In ra một viên kim cương có kích thước (2n+1) x (2n+1).
+Gợi ý
+sử dụng 2 vòng lặp for lồng nhau và câu lệnh rẽ nhánh if-else.
+Cách 1 for 0  đến 2n-1 bình thường => khó hiểu
+Cách 2 dùng for x, y chạy từ -n đến n kết hợp biểu thức phương trình hình thoi trong hệ trục toạ độ.
+Lưu ý
+Tham khảo cách cách in ra nửa trên hình thoi như sau:
+    int temp;
+    for(int x = -n; x <= n; x++){
+        for(int y = -n; y <= n; y++){
+            temp = x;
+            // Nếu muốn in ra nửa dưới hình thoi chỉ cần xét điều kiện của x
+            // và cập nhật biến temp ở đây.
+            if (y >= -(n + temp) && y <= n + temp){
+                cout<<"* ";
+            }else{
+                cout<<". ";
+            }
+        }
+        cout<<endl;
+    }
+
+
+For example:
+
+Input	Result
+4
+. . . . * . . . . 
+. . . * * * . . . 
+. . * * * * * . . 
+. * * * * * * * . 
+* * * * * * * * * 
+. * * * * * * * . 
+. . * * * * * . . 
+. . . * * * . . . 
+. . . . * . . . . 
